@@ -9,4 +9,6 @@ html {
 
 .descargar {
 	text-align: left;
+	border: 2px solid #9960EE;
+	padding: 1em;
 }
