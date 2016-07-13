@@ -3,6 +3,9 @@ html {
 	justify-content: center;
 }
 
+footer {
+	text-align: center;
+}
 .contenido {
 	text-align: center;
 }
@@ -12,3 +15,4 @@ html {
 	border: 2px solid #9960EE;
 	padding: 1em;
 }
+
