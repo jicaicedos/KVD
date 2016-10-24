@@ -3,10 +3,37 @@ html {
 	justify-content: center;
 }
 
+footer {
+	text-align: center;
+}
+
+.encuestas {
+	text-align: left;
+	border: 2px solid #DD9650;
+	padding: .5em 1em;	
+	margin-bottom: 1em;
+}
 .contenido {
 	text-align: center;
 }
 
 .descargar {
 	text-align: left;
+	border: 2px solid #9960EE;
+	padding: .5em 1em;
+}
+
+.siikios {
+	text-align: left;
+	border: 2px solid #69CC9C;
+	padding: .5em 1em;	
+	margin-top: 1em;
+}
+
+footer p {
+	font-size: 12px;
+}
+
+footer a {
+	font-size: 12px;
 }
