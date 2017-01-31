@@ -43,6 +43,12 @@ footer {
 	margin-bottom: 0;
 }
 
+.soytic {
+	text-align: left;
+	border: 2px solid #7F0835;
+	padding: .5em 1em;	
+	margin-top: 1em;
+}
 footer p {
 	font-size: 12px;
 }
