@@ -8,6 +8,11 @@ footer {
 	text-align: center;
 }
 
+header {
+	display: flex;
+	justify-content: center;
+	/*position: fixed;*/
+}
 nav {
 	display: flex;
 	justify-content: center;
@@ -48,6 +53,8 @@ nav {
 }
 .contenido {
 	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .descargar {
@@ -91,7 +98,21 @@ nav {
 	margin-bottom: 0px;
 }
 
+h3 {
+	background: #E0062A;
+	color: white;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	text-align: center;
+	font-family: Courier, "Lucida Console", monospace;
+}
 
+.separador {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #4756A0;
+}
 
 footer p {
 	font-size: 12px;
