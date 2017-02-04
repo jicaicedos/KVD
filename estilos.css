@@ -124,10 +124,17 @@ footer a {
 
 /*Mobile (landscape)*/
 @media only screen and (min-width: 280px) and (max-width: 767px) {
+	html {
+		font-size: 12px;
+	}
 	.menu {
 		display: block;
 	}	
 	.menu__item {
 		margin-bottom: 2px;
+	}
+	.contenido {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
