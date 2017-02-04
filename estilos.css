@@ -8,6 +8,38 @@ footer {
 	text-align: center;
 }
 
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+.menu {
+	display: -webkit-box;
+}
+
+.menu__item {
+	background: #4756A0;
+	list-style: none;
+	border-radius: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.menu__item a {
+	text-decoration: none;
+
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;	
+	color: white;
+}
+
 .encuestas {
 	text-align: left;
 	border: 2px solid #DD9650;
@@ -49,6 +81,18 @@ footer {
 	padding: .5em 1em;	
 	margin-top: 1em;
 }
+
+.listado_calidad {
+	text-align: left;
+}
+.listado_calidad p {
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+
 footer p {
 	font-size: 12px;
 }
