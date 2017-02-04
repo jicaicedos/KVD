@@ -121,3 +121,13 @@ footer p {
 footer a {
 	font-size: 12px;
 }
+
+/*Mobile (landscape)*/
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+	.menu {
+		display: block;
+	}	
+	.menu__item {
+		margin-bottom: 2px;
+	}
+}
