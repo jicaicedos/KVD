@@ -5,6 +5,8 @@ html {
 }
 
 footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
 	text-align: center;
 }
 
@@ -53,8 +55,8 @@ nav {
 }
 .contenido {
 	text-align: center;
-	padding-left: 50px;
-	padding-right: 50px;
+/*	padding-left: 50px;
+	padding-right: 50px;*/
 }
 
 .descargar {
@@ -114,6 +116,9 @@ h3 {
 	border: 1px solid #4756A0;
 }
 
+.ping {
+	padding-left: 40px;
+}
 footer p {
 	font-size: 12px;
 }
@@ -125,7 +130,7 @@ footer a {
 /*Mobile (landscape)*/
 @media only screen and (min-width: 280px) and (max-width: 767px) {
 	html {
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.menu {
 		display: block;
@@ -133,8 +138,9 @@ footer a {
 	.menu__item {
 		margin-bottom: 2px;
 	}
-	.contenido {
+/*	.contenido {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	*/
 }
