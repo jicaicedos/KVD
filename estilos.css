@@ -53,6 +53,19 @@ nav {
 	padding: .5em 1em;	
 	margin-bottom: 1em;
 }
+
+.encabezado_observaciones {
+	text-align: left;
+	border: 2px solid #7F0835;
+	padding: .5em 1em;	
+	margin-top: 1em;
+}
+
+.encabezado_observaciones p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 .contenido {
 	text-align: center;
 /*	padding-left: 50px;
