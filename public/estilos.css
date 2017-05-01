@@ -103,11 +103,9 @@ nav {
 	padding: .5em 1em;	
 	margin-top: 1em;
 	margin-bottom: 1em;
-.listado_calidad {
-}
-
 	text-align: left;
 }
+
 .listado_calidad p {
 	text-align: left;
 	margin-top: 0px;
@@ -141,6 +139,10 @@ footer a {
 	font-size: 12px;
 }
 
+.gestores p {
+	margin: 0px;
+	padding: 0px;
+}
 /*Mobile (landscape)*/
 @media only screen and (min-width: 280px) and (max-width: 767px) {
 	html {

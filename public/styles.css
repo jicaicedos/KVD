@@ -1,0 +1,171 @@
+html {
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+}
+
+footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	/*position: fixed;*/
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+.menu {
+	display: -webkit-box;
+}
+
+.menu__item {
+	background: #4756A0;
+	list-style: none;
+	border-radius: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.menu__item a {
+	text-decoration: none;
+
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;	
+	color: white;
+}
+
+.encuestas {
+	text-align: left;
+	border: 2px solid #DD9650;
+	padding: .5em 1em;	
+	margin-bottom: 1em;
+}
+
+.encabezado_observaciones {
+	text-align: left;
+	border: 2px solid #7F0835;
+	padding: .5em 1em;	
+	margin-top: 1em;
+}
+
+.encabezado_observaciones p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.contenido {
+	text-align: center;
+/*	padding-left: 50px;
+	padding-right: 50px;*/
+}
+
+.descargar {
+	text-align: left;
+	border: 2px solid #9960EE;
+	padding: .5em 1em;
+}
+
+.siikios {
+	text-align: left;
+	border: 2px solid #69CC9C;
+	padding: .5em 1em;	
+	margin-top: 1em;
+}
+
+.comandos_cmd {
+	text-align: left;
+	border: 2px solid #F39E0A;
+	padding: .5em 1em;	
+	margin-top: 1em;
+}
+
+.comandos_cmd p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.soytic {
+	text-align: left;
+	border: 2px solid #7F0835;
+	padding: .5em 1em;	
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: left;
+}
+
+.listado_calidad p {
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h3 {
+	background: #E0062A;
+	color: white;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	text-align: center;
+	font-family: Courier, "Lucida Console", monospace;
+}
+
+.separador {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	border: 1px solid #4756A0;
+}
+
+.ping {
+	padding-left: 40px;
+}
+footer p {
+	font-size: 12px;
+}
+
+footer a {
+	font-size: 12px;
+}
+
+.gestores {
+	text-align: left;
+}
+.gestores h4 {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.gestores p {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Mobile (landscape)*/
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+	html {
+		font-size: 16px;
+	}
+	.menu {
+		display: block;
+	}	
+	.menu__item {
+		margin-bottom: 2px;
+	}
+/*	.contenido {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	*/
+}
