@@ -1,5 +1,6 @@
 function consultarInfoKVD() {
 	var txt = document.getElementById("gestores")
+    var temp = ""
 	var idbeneficiario = $('#buscar').val()
 	$.getJSON("K2 Gestores Marzo.json", function(datos) 
 	{
@@ -36,6 +37,11 @@ function consultarInfoKVD() {
         						"<p>Cédula:" + KVD["cedula gestor"] + "</p>" +
         						"<p>Celular:" + KVD["Celular gestor"] + "</p>"
         	}
+            else {
+                temp = "<br><p>No se tiene información de este Kiosco Vive Digital</p>"
+                break
+            }
          });
     });
+    txt.innerHTML = temp
 }
