@@ -1,12 +1,16 @@
 function consultarInfoKVD() {
+
 	var txt = document.getElementById("gestores")
     var temp = ""
 	var idbeneficiario = $('#buscar').val()
+
+
 	$.getJSON("K2 Gestores Marzo.json", function(datos) 
 	{
         $.each(datos["K2 Gestores Marzo"], function(idx,KVD) {
         	
         	if ( KVD["id beneficiario"] == idbeneficiario ) {
+                
         		txt.innerHTML = "<h4>Códigos de identificación del KVD</h4>" +
                                 "<div class='separador'></div>" + 
         						"<p> ID Beneficiario: " + KVD["id beneficiario"] + "</p>" +
@@ -35,13 +39,15 @@ function consultarInfoKVD() {
                                 "<div class='separador'></div>" + 
         						"<p>Nombre:" + KVD["nombres gestor"] + "</p>" +
         						"<p>Cédula:" + KVD["cedula gestor"] + "</p>" +
-        						"<p>Celular:" + KVD["Celular gestor"] + "</p>"
+        						"<p>Celular:" + KVD["Celular gestor"] + "</p>"                    
+                return false 
+
         	}
             else {
-                temp = "<br><p>No se tiene información de este Kiosco Vive Digital</p>"
-                break
+
+                txt.innerHTML = "<br><p>No se tiene información de este Kiosco Vive Digital</p>"
+                
             }
          });
     });
-    txt.innerHTML = temp
 }
