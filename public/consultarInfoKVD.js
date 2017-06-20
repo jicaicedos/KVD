@@ -1,25 +1,35 @@
+/*********************************************************************************************
+
+    Función para obtener los datos de un Kiosco Vive Digital
+
+    Parámetros:
+        IDBeneficiario: Valor ingresado por el usuario
+
+**********************************************************************************************/
 function consultarInfoKVD() {
 
-	var txt = document.getElementById("gestores")
-    var temp = ""
+    // Se obtiene el valor de ID Beneficiario ingresado por el usuario
 	var idbeneficiario = $('#buscar').val()
 
-
-	$.getJSON("K2 Gestores Marzo.json", function(datos) 
+    // Se cargan los datos a partir de un archivo JSON
+    $.getJSON("K2GestoresMarzo-UTF8.json", function(datos) 
 	{
+        // Se recorren uno a uno los registros en el archivo JSON
         $.each(datos["K2 Gestores Marzo"], function(idx,KVD) {
         	
+            // Si un registro coincide con el criterio de búsqueda se obtienen los datos de ese registro
         	if ( KVD["id beneficiario"] == idbeneficiario ) {
-                
-        		txt.innerHTML = "<h4>Códigos de identificación del KVD</h4>" +
+
+                // Copiamos los datos en el campo "gestores" del html: VerInformacionKVD.html
+        		$("#gestores").html("<h4>Códigos de identificación del KVD</h4>" +
                                 "<div class='separador'></div>" + 
         						"<p> ID Beneficiario: " + KVD["id beneficiario"] + "</p>" +
         						"<p>ID Punto:"+ KVD["id punto"] +
 
         						"<h4>Ubicación del Kiosco Vive Digital</h4>" +
                                 "<div class='separador'></div>" + 
-        						"<p>Departamento:"+ KVD["departamento"] + "</p>" +
-        						"<p>Municipio:"+ KVD["municipio"] + "</p>" +
+        						"<p>Departamento:"+  KVD["departamento"] + "</p>" +
+        						"<p>Municipio:"+  unescape(KVD["municipio"]) + "</p>" +
         						"<p>Centro poblado:" + KVD["centro poblado"] + "</p>" +
         						"<p>Institución Educativa:" + KVD["nombre institucion"] + "</p>" +
         						"<p> Sede:" + KVD["nombre sede"] + "</p>" +
@@ -39,14 +49,14 @@ function consultarInfoKVD() {
                                 "<div class='separador'></div>" + 
         						"<p>Nombre:" + KVD["nombres gestor"] + "</p>" +
         						"<p>Cédula:" + KVD["cedula gestor"] + "</p>" +
-        						"<p>Celular:" + KVD["Celular gestor"] + "</p>"                    
+        						"<p>Celular:" + KVD["Celular gestor"] + "</p>"  )
                 return false 
 
         	}
             else {
 
-                txt.innerHTML = "<br><p>No se tiene información de este Kiosco Vive Digital</p>"
-                
+                $("#gestores").html("<br><p>No se tiene información de este Kiosco Vive Digital</p>")
+
             }
          });
     });
