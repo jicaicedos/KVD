@@ -61,6 +61,15 @@ nav {
 	color: white;
 }
 
+.menu__item:hover {
+	background-color: #F1A123;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;	
+}
+
+
 .layoutKVD {
 	text-align: left;
 	border: 2px solid #DD9650;
@@ -111,10 +120,33 @@ footer a {
 	font-size: 12px;
 }
 
+.gestores {
+	text-align: left;
+}
 .gestores p {
 	margin: 0px;
 	padding: 0px;
 }
+
+
+/* CSS para Crear Aviso */
+.aviso {
+	text-align: left;
+}
+
+.aviso p {
+	margin: 0px;
+	padding: 0px;	
+}
+
+.aviso .idbeneficiario_aviso {
+	font-size: 160px;
+}
+
+.aviso .sede, .departamento, .municipio, .centropoblado {
+	padding-right: 10px;
+}
+
 /*Mobile (landscape)*/
 @media only screen and (min-width: 280px) and (max-width: 767px) {
 	html {
