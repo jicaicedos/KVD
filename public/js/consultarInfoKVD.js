@@ -49,7 +49,7 @@ function consultarInfoKVD() {
                                 "<div class='separador'></div>" + 
         						"<p>Nombre:" + KVD["nombres gestor"] + "</p>" +
         						"<p>Cédula:" + KVD["cedula gestor"] + "</p>" +
-        						"<p>Celular:" + KVD["Celular gestor"] + "</p>"  
+        						"<p>Celular:" + KVD["Celular gestor"] + "</p>"  +
                                 "<p>Correo electrónico:" + KVD["correo electrónico  gestor"] + "</p>"
                             )
                 return false 
