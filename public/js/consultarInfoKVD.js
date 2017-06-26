@@ -40,17 +40,18 @@ function consultarInfoKVD() {
         						"<p>Línea cabina:"+ KVD["linea cabina "] + "</p>" +
         						"<p>Línea interna:"+ KVD["linea interna"] + "</p>" +
 
-        						"<h4>Coordinador</h4>" +
-                                "<div class='separador'></div>" + 
-        						"<p>Nombre:"+ KVD["coordinador"] + "</p>" +
-        						"<p>Celular coordinador:"+ KVD["telefono contacto"] + "</p>" +
-
         						"<h4>Datos Gestor(a)</h4>" +
                                 "<div class='separador'></div>" + 
         						"<p>Nombre:" + KVD["nombres gestor"] + "</p>" +
         						"<p>Cédula:" + KVD["cedula gestor"] + "</p>" +
         						"<p>Celular:" + KVD["Celular gestor"] + "</p>"  +
-                                "<p>Correo electrónico:" + KVD["correo electrónico  gestor"] + "</p>"
+                                "<p>Correo electrónico:" + KVD["correo electrónico  gestor"] + "</p>" + 
+
+                                "<h4>Coordinador</h4>" +
+                                "<div class='separador'></div>" + 
+                                "<p>Nombre:"+ KVD["coordinador"] + "</p>" +
+                                "<p>Celular coordinador:"+ KVD["telefono contacto"] + "</p>"
+
                             )
                 return false 
 
