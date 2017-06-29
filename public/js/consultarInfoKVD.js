@@ -23,8 +23,8 @@ function consultarInfoKVD() {
                 // Copiamos los datos en el campo "gestores" del html: VerInformacionKVD.html
         		$("#gestores").html("<h4>Códigos de identificación del KVD</h4>" +
                                 "<div class='separador'></div>" + 
-        						"<p> ID Beneficiario: " + KVD["id beneficiario"] + "</p>" +
-        						"<p>ID Punto:"+ KVD["id punto"] +
+        						"<p>ID Beneficiario:    " + KVD["id beneficiario"] + "</p>" +
+        						"<p>ID Punto:    "+ KVD["id punto"] +
 
         						"<h4>Ubicación del Kiosco Vive Digital</h4>" +
                                 "<div class='separador'></div>" + 
