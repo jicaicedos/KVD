@@ -28,29 +28,29 @@ function consultarInfoKVD() {
 
         						"<h4>Ubicación del Kiosco Vive Digital</h4>" +
                                 "<div class='separador'></div>" + 
-        						"<p>Departamento:"+  KVD["departamento"] + "</p>" +
-        						"<p>Municipio:"+  unescape(KVD["municipio"]) + "</p>" +
-        						"<p>Centro poblado:" + KVD["centro poblado"] + "</p>" +
-        						"<p>Institución Educativa:" + KVD["nombre institucion"] + "</p>" +
-        						"<p> Sede:" + KVD["nombre sede"] + "</p>" +
-        						"<p>Dirección:"+ KVD["direccion de la sede educativa"] + "</p>" +
+        						"<p>Departamento:     "+  KVD["departamento"] + "</p>" +
+        						"<p>Municipio:     "+  unescape(KVD["municipio"]) + "</p>" +
+        						"<p>Centro poblado:     " + KVD["centro poblado"] + "</p>" +
+        						"<p>Institución Educativa:     " + KVD["nombre institucion"] + "</p>" +
+        						"<p> Sede:     " + KVD["nombre sede"] + "</p>" +
+        						"<p>Dirección:     "+ KVD["direccion de la sede educativa"] + "</p>" +
 
         						"<h4>Líneas telefónicas</h4>" +
                                 "<div class='separador'></div>" + 
-        						"<p>Línea cabina:"+ KVD["linea cabina "] + "</p>" +
-        						"<p>Línea interna:"+ KVD["linea interna"] + "</p>" +
+        						"<p>Línea cabina:     "+ KVD["linea cabina "] + "</p>" +
+        						"<p>Línea interna:     "+ KVD["linea interna"] + "</p>" +
 
         						"<h4>Datos Gestor(a)</h4>" +
                                 "<div class='separador'></div>" + 
-        						"<p>Nombre:" + KVD["nombres gestor"] + "</p>" +
-        						"<p>Cédula:" + KVD["cedula gestor"] + "</p>" +
-        						"<p>Celular:" + KVD["Celular gestor"] + "</p>"  +
-                                "<p>Correo electrónico:" + KVD["correo electrónico  gestor"] + "</p>" + 
+        						"<p>Nombre:     " + KVD["nombres gestor"] + "</p>" +
+        						"<p>Cédula:     " + KVD["cedula gestor"] + "</p>" +
+        						"<p>Celular:     " + KVD["Celular gestor"] + "</p>"  +
+                                "<p>Correo electrónico:     " + KVD["correo electrónico  gestor"] + "</p>" + 
 
                                 "<h4>Coordinador</h4>" +
                                 "<div class='separador'></div>" + 
-                                "<p>Nombre:"+ KVD["coordinador"] + "</p>" +
-                                "<p>Celular coordinador:"+ KVD["telefono contacto"] + "</p>"
+                                "<p>Nombre:     "+ KVD["coordinador"] + "</p>" +
+                                "<p>Celular coordinador:     "+ KVD["telefono contacto"] + "</p>"
 
                             )
                 return false 
