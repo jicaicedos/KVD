@@ -34,6 +34,10 @@ nav {
 	justify-content: center;
 }
 
+input {
+	margin-bottom: 15px;
+}
+
 .menu {
 	display: -webkit-box;
 }
