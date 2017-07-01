@@ -20,6 +20,9 @@
 	  crossorigin="anonymous">	  	
 	  </script>		
 
+	<!-- Libreria para generar PDF -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+
 	<!-- Código para consultar información del KVD -->
 	<script type="text/javascript" src="../js/crearAviso.js"></script>
 </head>
@@ -39,12 +42,13 @@
 		</nav>
 		<h3>Crear aviso - Muy pronto!!</h3>
 		<p>Por favor digite el ID Beneficiario</p>
-		<input type="number" id="idbeneficiario1" />
+		<input type="number" id="idbeneficiario1" value="0" />
 		<br>
-		<input type="number" id="idbeneficiario2" />
+		<input type="number" id="idbeneficiario2" value="0" />
 		<br>
-		<input type="submit" value="Crear" onclick="crearAviso()" />
-		<div class="aviso" id="aviso"></div>
+		<input type="submit" value="Generar aviso" onclick="crearAviso()" />
+		<br>
+		<div class="aviso" id="aviso"></div>			
 	</div>	
 	<footer>
 		<p>Creado por: Javier Ignacio Caicedo</p>
