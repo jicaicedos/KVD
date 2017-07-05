@@ -49,17 +49,18 @@ function crearAviso() {
 		{
 			if( textID1 == ("<p>No se encontró información del KVD: " + arr_idbeneficiario[0] + "</p>") )
 			{
-				$("#aviso").html("<br>"+textID1)				
+				$("#aviso").html("<br><p>"+textID1+"</p><br><p>Avisos generados: <strong>"+arr_idbeneficiario[1]+"</strong></p>")				
 			}
 			if( textID2 == ("<p>No se encontró información del KVD: " + arr_idbeneficiario[1] + "</p>") ) 
 			{
-				$("#aviso").html("<br>"+textID2)
+				$("#aviso").html("<br><p>"+textID2+"</p><br><p>Avisos generados: <strong>"+arr_idbeneficiario[0]+"</strong></p>")
 			}
 			avisos(arr_avisos, cont)
 			return false
 		}
 		if( cont >= 1 ) 
 		{
+			$("#aviso").html("<br><p>Avisos generados: <strong>"+arr_idbeneficiario[0]+"</strong> y <strong>"+arr_idbeneficiario[1]+"</strong></p>")
 			avisos(arr_avisos, cont)
 			return false
 		}
@@ -75,8 +76,8 @@ function avisos(arr_avisos, cont) {
 
 	for( var i=0; i<cont; i++ ) 
 	{
-		doc.setFontSize(20)
-		doc.text("Fecha _________/_________/ 2017", x, y-50)	// y-50
+		doc.setFontSize(25)
+		doc.text("Fecha ______/______/ 2017", x, y-50)	// y-50
 		doc.setFontSize(160)
 		doc.setFontType("bold")
 		doc.text(arr_avisos[i].idbeneficiario, x, y) // y=70
@@ -91,12 +92,13 @@ function avisos(arr_avisos, cont) {
 		doc.setFontSize(20)
 		doc.text("Centro poblado   " + arr_avisos[i].centropoblado, x, y+40)
 		if( i%2 == 0 ) {
-			doc.text("-------------------------------------------------------------------------", x, y+70)
+			doc.text("-------------------------------------------------------------------------", x, y+60)
 		}
-		y = y + 150
+		y = y + 130
 	}
 
 	// Se genera y guarda el PDF en la carpeta "Descargas"
 	doc.save( nombrePDF + ".pdf")
+	// $("#aviso").html("<br>El aviso fue generado, por favor revisar carpeta de Descargas")
 
 }
