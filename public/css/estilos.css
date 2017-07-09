@@ -1,17 +1,26 @@
 html {
-	display: flex;
-	justify-content: center;
+/*	display: flex;
+	justify-content: center;*/
 	font-size: 16px;
+	background: #f0f0f5;
+
 }
 
 footer {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	/*background: #c5c9d8;*/
+	padding-bottom: 10px;
+	padding-top: 10px;
 	text-align: center;
+	position: relative;
+}
+
+section {
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 header {
-	display: flex;
+	/*display: flex;*/
 	justify-content: center;
 	/*position: fixed;*/
 }
@@ -30,7 +39,9 @@ h3 {
 }
 
 nav {
+	/*background: #c5c9d8;*/
 	display: flex;
+	padding: 0px 10px;
 	justify-content: center;
 }
 
@@ -40,18 +51,28 @@ input {
 
 .menu {
 	display: -webkit-box;
+	padding-left: 0px;
+	margin: 5px 0px;
 }
 
 .menu__item {
 	background: #4756A0;
 	list-style: none;
-	border-radius: 10px;
-	margin-left: 2px;
-	margin-right: 2px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
+	box-shadow: inset 0 0 5px white;
+}
+
+/* Aplicamos estilos al primer elemento del menu*/
+.menu__item:nth-child(1) {
+	border-radius: 10px 0px 0px 10px;
+}
+
+/* Aplicamos estilos al ultimo elemento del menu*/
+.menu__item:last-child {
+	border-radius: 0px 10px 10px 0px;
 }
 
 .menu__item a {
@@ -66,7 +87,7 @@ input {
 }
 
 .menu__item:hover {
-	background-color: #F1A123;
+	background-color: #6fa4d4;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
@@ -75,10 +96,13 @@ input {
 
 
 .layoutKVD {
+	background: white;
 	text-align: left;
-	border: 2px solid #DD9650;
+	/*border: 2px solid #DD9650;*/
 	padding: .5em 1em;	
 	margin-bottom: 1em;
+	box-shadow: inset 0 0 16px gray;
+	border-radius: 5px;
 }
 
 .layoutKVD a {
@@ -98,7 +122,10 @@ input {
 	padding-left: 0px;
 }
 .contenido {
-	text-align: center;
+	background: #f0f0f5;
+/*	padding-left: 150px;
+	padding-right: 150px;*/
+	text-align: center;	
 }
 
 .listado_calidad p {
@@ -154,17 +181,37 @@ footer a {
 /*Mobile (landscape)*/
 @media only screen and (min-width: 280px) and (max-width: 767px) {
 	html {
-		font-size: 16px;
+		/*display: none;*/
+		font-size: 14px;
 	}
+
+	nav {
+		display: block;
+		padding: 0px;
+	}
+
+	section {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.contenido {
+		padding: 0px;
+	}	
+
+
 	.menu {
 		display: block;
 	}	
-	.menu__item {
-		margin-bottom: 2px;
+ 	
+ 	/* Aplicamos estilos al primer elemento del menu*/
+	.menu__item:first-child {
+		border-radius: 0px;
 	}
-/*	.contenido {
-		padding-left: 0px;
-		padding-right: 0px;
+
+	/* Aplicamos estilos al ultimo elemento del menu*/
+	.menu__item:last-child {
+		border-radius: 0px;
 	}
-	*/
+
 }
