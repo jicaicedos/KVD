@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-
-	<title>Consultar KVD</title>
+	<title>Crear aviso</title>
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/estilos.css">
-
-	<!-- Icono -->
-	<link rel="shortcut icon" href="../images/logoKVD-encabezado.png">
 
     <!-- Mobile Specific Metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />	
-    
+
     <!-- Libreria JQuery  -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
 	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 	  crossorigin="anonymous">	  	
 	  </script>		
 
+	<!-- Libreria para generar PDF -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+
 	<!-- Código para consultar información del KVD -->
-	<script type="text/javascript" src="../js/consultarInfoKVD.js"></script>
+	<script type="text/javascript" src="../js/crearAviso.js"></script>
 </head>
 <body>
 	<div class="contenido">
 		<header>
-			<img src="../images/logo_KVD.png" alt="">
+			<!-- <img src="../images/logo_KVD.png" alt=""> -->
 		</header>
 		<nav>
 			<ul class="menu">
@@ -38,13 +37,18 @@
 				<li class="menu__item"><a href="../pages/crear_aviso.html" target="_blank">Crear aviso</a></li>				
 			</ul>
 		</nav>
-		<h3>Consultar información del KVD</h3>
+
+		<h3>Crear avisos</h3>
 		<p>Por favor digite el ID Beneficiario</p>
-		<input type="text" id="buscar">
-		<input type="submit" value="Buscar" onclick="consultarInfoKVD()">
-		<div id="gestores" class="gestores">		
-		</div>
-	</div>
+		<input type="number" id="idbeneficiario1" value="0" />
+		<br>
+		<input type="number" id="idbeneficiario2" value="0" />
+		<br>
+		<input type="submit" value="Generar aviso" onclick="crearAviso()" />
+		<br>
+		<div class="aviso" id="aviso"></div>			
+			
+	</div>	
 	<footer>
 		<p>Creado por: Javier Ignacio Caicedo</p>
 		<p>Correo electrónico: javiercaicedos0324@gmail.com</p>

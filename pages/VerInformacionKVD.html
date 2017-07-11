@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Crear aviso</title>
+
+	<title>Consultar KVD</title>
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/estilos.css">
 
 	<!-- Icono -->
-	<link rel="shortcut icon" href="../images/logoKVD-encabezado.png">
+	<!-- <link rel="shortcut icon" href="../images/logoKVD-encabezado.png"> -->
 
     <!-- Mobile Specific Metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />	
-
+    
     <!-- Libreria JQuery  -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
 	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
@@ -21,12 +22,12 @@
 	  </script>		
 
 	<!-- Código para consultar información del KVD -->
-	<script type="text/javascript" src="../js/crearAviso.js"></script>
+	<script type="text/javascript" src="../js/consultarInfoKVD.js"></script>
 </head>
 <body>
 	<div class="contenido">
 		<header>
-			<img src="../images/logo_KVD.png" alt="">
+			<!-- <img src="../images/logo_KVD.png" alt=""> -->
 		</header>
 		<nav>
 			<ul class="menu">
@@ -37,12 +38,13 @@
 				<li class="menu__item"><a href="../pages/crear_aviso.html" target="_blank">Crear aviso</a></li>				
 			</ul>
 		</nav>
-		<h3>Crear aviso - Muy pronto!!</h3>
+		<h3>Consultar información del KVD</h3>
 		<p>Por favor digite el ID Beneficiario</p>
-		<input type="number" id="idbeneficiario">
-		<input type="submit" value="Crear" onclick="crearAviso()">
-		<div class="aviso" id="aviso"></div>
-	</div>	
+		<input type="text" id="buscar">
+		<input type="submit" value="Buscar" onclick="consultarInfoKVD()">
+		<div id="gestores" class="gestores">		
+		</div>
+	</div>
 	<footer>
 		<p>Creado por: Javier Ignacio Caicedo</p>
 		<p>Correo electrónico: javiercaicedos0324@gmail.com</p>
