@@ -2,12 +2,11 @@ html {
 /*	display: flex;
 	justify-content: center;*/
 	font-size: 16px;
-	background: #f0f0f5;
-
+	/*background: #f0f0f5;  gris fondo chevere */
+	background: yellow;
 }
 
 footer {
-	/*background: #c5c9d8;*/
 	padding-bottom: 10px;
 	padding-top: 10px;
 	text-align: center;
@@ -123,8 +122,8 @@ input {
 }
 .contenido {
 	background: #f0f0f5;
-/*	padding-left: 150px;
-	padding-right: 150px;*/
+	padding-left: 150px;
+	padding-right: 150px;
 	text-align: center;	
 }
 
@@ -191,12 +190,15 @@ footer a {
 	}
 
 	section {
-		padding-left: 40px;
+/*		padding-left: 40px;
 		padding-right: 40px;
+*/		margin-left: 20px;
+		margin-right: 20px;
 	}
 
 	.contenido {
 		padding: 0px;
+
 	}	
 
 
