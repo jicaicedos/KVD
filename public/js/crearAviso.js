@@ -8,11 +8,8 @@ function crearAviso() {
 	arr_idbeneficiario[0] = $('#idbeneficiario1').val()
 	arr_idbeneficiario[1] = $('#idbeneficiario2').val()
 
-	var textID1 = "<p>No se encontró información del KVD: " + arr_idbeneficiario[0] + "</p>"
-	var textID2 = "<p>No se encontró información del KVD: " + arr_idbeneficiario[1] + "</p>"
-
-	// Se limpia la pantalla de avisos anteriores 
-	$("#aviso").html("")
+	var textID1 = "No se encontró información del KVD: " + arr_idbeneficiario[0]
+	var textID2 = "No se encontró información del KVD: " + arr_idbeneficiario[1]
 
 	$.getJSON("../bd/K2GestoresMarzo-UTF8.json", function(datos) 
 	{
@@ -43,30 +40,31 @@ function crearAviso() {
 
 		if( cont == 0 ) 
 		{
-			$("#aviso").html("<br>"+textID1+textID2)
+			alert( textID1 + "\n\n" + textID2 )
 		}
 		if( cont == 1 ) 
 		{
-			if( textID1 == ("<p>No se encontró información del KVD: " + arr_idbeneficiario[0] + "</p>") )
+			if( textID1 == ("No se encontró información del KVD: " + arr_idbeneficiario[0]) )
 			{
-				$("#aviso").html("<br><p>"+textID1+"</p><br><p>Avisos generados: <strong>"+arr_idbeneficiario[1]+"</strong></p>")				
+				alert(textID1+"\n\nAvisos generados: "+arr_idbeneficiario[1])
 			}
-			if( textID2 == ("<p>No se encontró información del KVD: " + arr_idbeneficiario[1] + "</p>") ) 
+			if( textID2 == ("No se encontró información del KVD: " + arr_idbeneficiario[1]) ) 
 			{
-				$("#aviso").html("<br><p>"+textID2+"</p><br><p>Avisos generados: <strong>"+arr_idbeneficiario[0]+"</strong></p>")
+				alert(textID2+"\n\nAvisos generados: "+arr_idbeneficiario[0])
 			}
 			avisos(arr_avisos, cont)
 			return false
 		}
 		if( cont >= 1 ) 
 		{
-			$("#aviso").html("<br><p>Avisos generados: <strong>"+arr_idbeneficiario[0]+"</strong> y <strong>"+arr_idbeneficiario[1]+"</strong></p>")
+			alert("Avisos generados: "+arr_idbeneficiario[0] +" y "+arr_idbeneficiario[1])
 			avisos(arr_avisos, cont)
 			return false
 		}
 	});
 }
 
+// Se toman los datos obtenidos en la consulta y se estructura el archivo PDF del aviso
 function avisos(arr_avisos, cont) {
 
 	var doc = new jsPDF()
@@ -99,6 +97,5 @@ function avisos(arr_avisos, cont) {
 
 	// Se genera y guarda el PDF en la carpeta "Descargas"
 	doc.save( nombrePDF + ".pdf")
-	// $("#aviso").html("<br>El aviso fue generado, por favor revisar carpeta de Descargas")
 
 }
