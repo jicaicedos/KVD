@@ -11,7 +11,7 @@ function crearAviso() {
 	var textID1 = "No se encontró información del KVD: " + arr_idbeneficiario[0]
 	var textID2 = "No se encontró información del KVD: " + arr_idbeneficiario[1]
 
-	$.getJSON("../bd/K2GestoresMarzo-UTF8.json", function(datos) 
+	$.getJSON("bd/K2GestoresMarzo-UTF8.json", function(datos) 
 	{
 		$.each(datos["K2 Gestores Marzo"], function(index, KVD) 
 		{

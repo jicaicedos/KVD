@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Consultar KVD</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<!-- Icono -->
+	<!-- <link rel="shortcut icon" href="../images/logoKVD-encabezado.png"> -->
+
+    <!-- Mobile Specific Metas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />	
+    
+    <!-- Libreria JQuery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	  crossorigin="anonymous">	  	
+	  </script>		
+
+	<!-- Código para consultar información del KVD -->
+	<script type="text/javascript" src="js/consultarInfoKVD.js"></script>
+
+	<script type="text/javascript" src="js/load_pages.js"></script>
+</head>
+<body>
+	<div class="contenido">
+		<header>
+			<!-- <img src="../images/logo_KVD.png" alt=""> -->
+		</header>
+
+		<nav></nav>
+
+		<h3>Consultar información del KVD</h3>
+		<p>Por favor digite el ID Beneficiario</p>
+		<input type="number" id="buscar">
+		<input type="submit" value="Buscar" onclick="consultarInfoKVD()">
+		<section class="layoutKVD">
+			<div id="gestores" class="gestores"></div>			
+		</section>					
+	</div>
+
+	<footer></footer>
+
+	<script>load_pages()</script>
+
+	</body>
+</html>
