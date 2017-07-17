@@ -11,28 +11,28 @@ function crearAviso() {
 	var textID1 = "No se encontró información del KVD: " + arr_idbeneficiario[0]
 	var textID2 = "No se encontró información del KVD: " + arr_idbeneficiario[1]
 
-	$.getJSON("bd/K2GestoresMarzo-UTF8.json", function(datos) 
+	$.getJSON("bd/bd_kioscos_vive_digital.json", function(datos) 
 	{
-		$.each(datos["K2 Gestores Marzo"], function(index, KVD) 
+		$.each(datos["bd_kioscos_vive_digital"], function(index, KVD) 
 		{
 
-			if( KVD["id beneficiario"] == arr_idbeneficiario[0] ) 
+			if( KVD["ID BENEFICIARIO"] == arr_idbeneficiario[0] ) 
 			{ 
-				arr_avisos[cont].idbeneficiario = KVD["id beneficiario"]
-				arr_avisos[cont].ie = KVD["nombre institucion"]
-				arr_avisos[cont].departamento = KVD["departamento"]
-				arr_avisos[cont].municipio = KVD["municipio"]
-				arr_avisos[cont].centropoblado = KVD["centro poblado"]				
+				arr_avisos[cont].idbeneficiario = KVD["ID BENEFICIARIO"]
+				arr_avisos[cont].ie = KVD["Nombre Institución"]
+				arr_avisos[cont].departamento = KVD["Departamento"]
+				arr_avisos[cont].municipio = KVD["Municipio"]
+				arr_avisos[cont].centropoblado = KVD["Centro poblado"]				
 				cont++
 				textID1 = ""
 			}
-			if( KVD["id beneficiario"] == arr_idbeneficiario[1] ) 
+			if( KVD["ID BENEFICIARIO"] == arr_idbeneficiario[1] ) 
 			{
-				arr_avisos[cont].idbeneficiario = KVD["id beneficiario"]
-				arr_avisos[cont].ie = KVD["nombre institucion"]
-				arr_avisos[cont].departamento = KVD["departamento"]
-				arr_avisos[cont].municipio = KVD["municipio"]
-				arr_avisos[cont].centropoblado = KVD["centro poblado"]
+				arr_avisos[cont].idbeneficiario = KVD["ID BENEFICIARIO"]
+				arr_avisos[cont].ie = KVD["Nombre Institución"]
+				arr_avisos[cont].departamento = KVD["Departamento"]
+				arr_avisos[cont].municipio = KVD["Municipio"]
+				arr_avisos[cont].centropoblado = KVD["Centro poblado"]	
 				cont++
 				textID2 = ""
 			}

@@ -38,13 +38,13 @@ function consultarIDContratista() {
 	$("#inventarioKVD").html("")
 	$("#idcontratista").val("0")
 	
-	$.getJSON("bd/K2GestoresMarzo-UTF8.json",  function(datos) 
+	$.getJSON("bd/bd_kioscos_vive_digital.json",  function(datos) 
 	{
-		$.each(datos["K2 Gestores Marzo"], function(index, KVD) 
+		$.each(datos["bd_kioscos_vive_digital"], function(index, KVD) 
 		{			
-			if( KVD["id beneficiario"] == idbeneficiario ) 
+			if( KVD["ID BENEFICIARIO"] == idbeneficiario ) 
 			{
-				$("#contratista").html("Id Contratista: " + KVD["id punto"])								
+				$("#contratista").html("Id Contratista: " + KVD["ID Punto"])								
 				band = 1
 				return false
 			}
