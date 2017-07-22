@@ -42,6 +42,11 @@ input {
 	margin-bottom: 15px;
 }
 
+#aviso_pdf {
+	width: 900px;
+	height: 400px;
+}
+
 .menu {
 	display: -webkit-box;
 	padding-left: 0px;

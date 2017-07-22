@@ -1,10 +1,22 @@
+=============================================================================
+
+	Sistema de apoyo para visitas a Kioscos Vive Digital
+
+=============================================================================
+
+CONTENIDO
+
+1. Convertir archivo .xlsx a .json
+2. Tener en cuenta
+
+
+
+1. Convertir archivo .xlsx a .json
+===================================
+
 Tener en cuenta
 
 
-
-- Se deben cambiar los campos que tienen nombres con tíldes
-
-- Para crear base de datos en formato JSON se deben eliminar los puntos y comas (;)
 
 - Eliminar las dobles comillas que estén afectando el archivo JSON
 	
@@ -128,3 +140,17 @@ Agregarle un nombre al arreglo, encerrando todo entre corchetes {}
 6) Finalmente Guardar el archivo
 
 
+2. Tener en cuenta
+===================
+
+- Para embeber un documento PDF en una página .html usamos:
+<embed>
+Ejemplo: <embed id="aviso_pdf" src="bd/Encuesta NSU y Efectos Sociales K2.pdf">
+
+- Para quitar la función de guardar PDF, usamos
+ #toolbar=0
+Ejemplo:  <embed id="aviso_pdf" src="bd/Encuesta NSU y Efectos Sociales K2.pdf#toolbar=0">
+
+- Se puede agregar un atributo a un elemento con jquery de la siguiente manera:
+?
+  $("a").attr("href","http://google.com/")

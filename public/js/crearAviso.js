@@ -71,6 +71,7 @@ function avisos(arr_avisos, cont) {
 	var x = 30
 	var y = 80
 	var nombrePDF = ""
+	var ruta = "bd/"
 
 	for( var i=0; i<cont; i++ ) 
 	{
@@ -96,6 +97,10 @@ function avisos(arr_avisos, cont) {
 	}
 
 	// Se genera y guarda el PDF en la carpeta "Descargas"
-	doc.save( nombrePDF + ".pdf")
+	nombrePDF += ".pdf"
+
+	doc.save( nombrePDF )
+
+	// $('#aviso_pdf').attr({src: ruta});
 
 }
