@@ -1,0 +1,47 @@
+ID Beneficiario: 
+Departamento: 
+Municipio: 
+Centro poblado: 
+Operador: 
+
+
+En visita de calidad ejecutada al Kiosco se encontró lo siguiente:
+
+
+
+Prueba de velocidad Download:  Kbps Upload:  Kbps
+
+
+Solicitud o Ticket generardo
+No. Ticket
+
+
+Numero de computadores en KVD
+
+¿Cuántos equipos hay en el KVD? 
+¿Cuántos funcionan correctamente? 
+
+Seriales inventario
+MODEM				HUGHES HX200/SKYEDGE II	0
+ACCES POINT						0
+IMPRESORA			HP CZ183A/CANON		0
+SERVIDOR			HP			0
+EQUIPO 1 (Casos especiales)	HP			0
+ATA				CodecsAudio/CISCO	0
+TELÉFONO						0	
+TELEVISOR			SAMSUNG			0
+SWITCH				TP-LINK/Sin Marca	0
+ROUTER				AirStation BUFALO	0
+REGULADOR			MAGOM/NEWLINE		0
+UPS							0
+MESA PARA IMPRESORA					0
+ESCRITORIO (Solo casos especiales)			0
+SILLAS (Solo casos especiales)				0
+CABINA TELEFÓNICA					0
+
+
+Datos gestor(a)
+Nombre: 
+Cédula: (Visita aprobación -> expedida en: )
+No. Celular: 
+Correo Electrónico (Visita de aprobación)
