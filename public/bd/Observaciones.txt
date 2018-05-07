@@ -21,6 +21,15 @@ Numero de computadores en KVD
 ¿Cuántos equipos hay en el KVD? 
 ¿Cuántos funcionan correctamente? 
 
+
+¿Cuántos cursos?:  Ejemplo: 1 - Historia, mi historia, nuestra historia
+¿Ultima actividad sensibilización?:  Ejemplo: Yo aprendo
+Fecha actividad:   Ejemplo: 10 de abril 2018
+¿Qué proyectos tiene con la comunidad?:  
+
+¿El gestor esta participando del acompañamiento a algún proyecto productivo en conjunto con el Coordinador Departamental?
+SI NO    CUAL?________________________________________ 
+
 Seriales inventario
 MODEM				HUGHES HX200/SKYEDGE II	0
 ACCES POINT						0
