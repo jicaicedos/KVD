@@ -1,11 +1,11 @@
-ID Beneficiario: 
+ï»¿ID Beneficiario: 
 Departamento: 
 Municipio: 
 Centro poblado: 
 Operador: 
 
 
-En visita de calidad ejecutada al Kiosco se encontró lo siguiente:
+En visita de calidad ejecutada al Kiosco se encontrÃ³ lo siguiente:
 
 
 
@@ -18,16 +18,16 @@ No. Ticket
 
 Numero de computadores en KVD
 
-¿Cuántos equipos hay en el KVD? 
-¿Cuántos funcionan correctamente? 
+Â¿CuÃ¡ntos equipos hay en el KVD? 
+Â¿CuÃ¡ntos funcionan correctamente? 
 
 
-¿Cuántos cursos?:  Ejemplo: 1 - Historia, mi historia, nuestra historia
-¿Ultima actividad sensibilización?:  Ejemplo: Yo aprendo
+Â¿CuÃ¡ntos cursos?:  Ejemplo: 1 - Historia, mi historia, nuestra historia
+Â¿Ultima actividad sensibilizaciÃ³n?:  Ejemplo: Yo aprendo
 Fecha actividad:   Ejemplo: 10 de abril 2018
-¿Qué proyectos tiene con la comunidad?:  
+Â¿QuÃ© proyectos tiene con la comunidad?:  
 
-¿El gestor esta participando del acompañamiento a algún proyecto productivo en conjunto con el Coordinador Departamental?
+Â¿El gestor esta participando del acompaÃ±amiento a algÃºn proyecto productivo en conjunto con el Coordinador Departamental?
 SI NO    CUAL?________________________________________ 
 
 Seriales inventario
@@ -37,7 +37,7 @@ IMPRESORA			HP CZ183A/CANON		0
 SERVIDOR			HP			0
 EQUIPO 1 (Casos especiales)	HP			0
 ATA				CodecsAudio/CISCO	0
-TELÉFONO						0	
+TELÃ‰FONO						0	
 TELEVISOR			SAMSUNG			0
 SWITCH				TP-LINK/Sin Marca	0
 ROUTER				AirStation BUFALO	0
@@ -46,11 +46,11 @@ UPS							0
 MESA PARA IMPRESORA					0
 ESCRITORIO (Solo casos especiales)			0
 SILLAS (Solo casos especiales)				0
-CABINA TELEFÓNICA					0
+CABINA TELEFÃ“NICA					0
 
 
 Datos gestor(a)
 Nombre: 
-Cédula: (Visita aprobación -> expedida en: )
+CÃ©dula: (Visita aprobaciÃ³n -> expedida en: )
 No. Celular: 
-Correo Electrónico (Visita de aprobación)
+Correo ElectrÃ³nico (Visita de aprobaciÃ³n)
