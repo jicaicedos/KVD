@@ -25,6 +25,13 @@ function consultarInfoKVD() {
                                 "<div class='separador'></div>" + 
                                 "<h4>Contratista</h4>" +
                                 "<p>Contratista:    " + KVD["CONTRATISTA"] + "</p>" +
+                                "<p>Tipo de KVD:    " + KVD["TIPO KVD"] + "</p>" +
+                                "<p>Tipo de Velocidad:    " + KVD["TIPO VELOCIDAD"] + "</p>" +
+                                "<p>Tipo de solución:    " + KVD["TIPO DE SOLUCIÓN INSTALADA"] + "</p>" +
+                                "<p>IP Pública:    " + KVD["IP PUBLICA"] + "</p>" +
+                                "<p>Velocidad mínima Download:    " + KVD["VELOCIDAD MÍNIMA DOWNLOAD (Kbps)"] + "</p>" +
+                                "<p>Velocidad mínima Upload:    " + KVD["VELOCIDAD MÍNIMA UPLOAD (Kbps)"] + "</p>" +                               
+
 
                                 "<h4>Códigos KVD</h4>" +
                                 "<div class='separador'></div>" + 
