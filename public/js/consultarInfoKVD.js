@@ -12,7 +12,7 @@ function consultarInfoKVD() {
 	var idbeneficiario = $('#buscar').val()
 
     // Se cargan los datos a partir de un archivo JSON
-    $.getJSON("../bd/base-kvd-mayo-18.json", function(datos) 
+    $.getJSON("bd/base-kvd-mayo-18.json", function(datos) 
 	{
         // Se recorren uno a uno los registros en el archivo JSON
         $.each(datos["K2 Gestores Marzo"], function(idx,KVD) {
