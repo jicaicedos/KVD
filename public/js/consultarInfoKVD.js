@@ -24,7 +24,7 @@ function consultarInfoKVD() {
         		$("#gestores").html("<h4>Kiosco Vive Digital</h4>" +
                                 "<div class='separador'></div>" + 
                                 "<h4>Contratista</h4>" +
-                                "<p>Contratista:    " + KVD["CONTRATISTA"] + "</p>" +
+                                "<p>Contratistaa:    " + KVD["CONTRATISTA"] + "</p>" +
                                 "<p>Tipo de KVD:    " + KVD["TIPO KVD"] + "</p>" +
                                 "<p>Tipo de Velocidad:    " + KVD["TIPO VELOCIDAD"] + "</p>" +
                                 "<p>Tipo de solución:    " + KVD["TIPO DE SOLUCIÓN INSTALADA"] + "</p>" +
