@@ -23,7 +23,6 @@ function consultarInfoKVD() {
                 // Copiamos los datos en el campo "gestores" del html: VerInformacionKVD.html
         		$("#gestores").html("<h4>Kiosco Vive Digital</h4>" +
                                 "<div class='separador'></div>" + 
-                                "<h4>Contratista</h4>" +
                                 "<p>Contratistaa:    " + KVD["CONTRATISTA"] + "</p>" +
                                 "<p>Tipo de KVD:    " + KVD["TIPO KVD"] + "</p>" +
                                 "<p>Tipo de Velocidad:    " + KVD["TIPO VELOCIDAD"] + "</p>" +
