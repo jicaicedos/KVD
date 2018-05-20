@@ -15,7 +15,7 @@ function consultarInfoKVD() {
     $.getJSON("bd/base-kvd-mayo-18.json", function(datos) 
 	{
         // Se recorren uno a uno los registros en el archivo JSON
-        $.each(datos["K2 Gestores Marzo"], function(idx,KVD) {
+        $.each(datos["K2 Gestores Mayo"], function(idx, KVD) {
         	
             // Si un registro coincide con el criterio de búsqueda se obtienen los datos de ese registro
         	if ( KVD["ID BENEFICIARIO"] == idbeneficiario ) {
@@ -25,8 +25,8 @@ function consultarInfoKVD() {
                                 "<div class='separador'></div>" + 
                                 "<p>Contratistaa:    " + KVD["CONTRATISTA"] + "</p>" +
                                 "<p>Tipo de KVD:    " + KVD["TIPO KVD"] + "</p>" +
-                                "<p>Tipo de Velocidad:    " + KVD["TIPO VELOCIDAD"] + "</p>" +
                                 "<p>Tipo de solución:    " + KVD["TIPO DE SOLUCIÓN INSTALADA"] + "</p>" +
+                                "<p>Tipo de Velocidad:    " + KVD["TIPO VELOCIDAD"] + "</p>" +
                                 "<p>IP Pública:    " + KVD["IP PUBLICA"] + "</p>" +
                                 "<p>Velocidad mínima Download:    " + KVD["VELOCIDAD MÍNIMA DOWNLOAD (Kbps)"] + "</p>" +
                                 "<p>Velocidad mínima Upload:    " + KVD["VELOCIDAD MÍNIMA UPLOAD (Kbps)"] + "</p>" +                               
@@ -42,8 +42,10 @@ function consultarInfoKVD() {
         						"<p>Departamento:     "+  KVD["Departamento"] + "</p>" +
         						"<p>Municipio:     "+  unescape(KVD["Municipio"]) + "</p>" +
         						"<p>Centro poblado:     " + KVD["Centro poblado"] + "</p>" +
-        						"<p>Institución Educativa:     " + KVD["Nombre Institución"] + "</p>" +
-        						"<p> Sede:     " + KVD["Nombre Sede"] + "</p>" +
+                                "<p>Institución Educativa:     " + KVD["Nombre Institución"] + "</p>" +
+                                "<p>DANE I.E:     " + KVD["DANE Institución"] + "</p>" +
+                                "<p> Sede:     " + KVD["Nombre Sede"] + "</p>" +
+                                "<p>DANE Sede:     " + KVD["DANE Sede"] + "</p>" +
         						"<p>Dirección:     "+ KVD["Dirección de la sede educativa"] + "</p>" +
 
         						"<h4>Líneas telefónicas</h4>" +
