@@ -11,15 +11,15 @@ function crearAviso() {
 	var textID1 = "No se encontró información del KVD: " + arr_idbeneficiario[0]
 	var textID2 = "No se encontró información del KVD: " + arr_idbeneficiario[1]
 
-	$.getJSON("bd/bd_kioscos_vive_digital.json", function(datos) 
+	$.getJSON("bd/base-kvd-mayo-18.json", function(datos) 
 	{
-		$.each(datos["bd_kioscos_vive_digital"], function(index, KVD) 
+		$.each(datos["K2 Gestores Mayo"], function(index, KVD) 
 		{
 
 			if( KVD["ID BENEFICIARIO"] == arr_idbeneficiario[0] ) 
 			{ 
 				arr_avisos[cont].idbeneficiario = KVD["ID BENEFICIARIO"]
-				arr_avisos[cont].ie = KVD["Nombre Institución"]
+				arr_avisos[cont].ie = KVD["Nombre Sede"]
 				arr_avisos[cont].departamento = KVD["Departamento"]
 				arr_avisos[cont].municipio = KVD["Municipio"]
 				arr_avisos[cont].centropoblado = KVD["Centro poblado"]				
@@ -29,10 +29,10 @@ function crearAviso() {
 			if( KVD["ID BENEFICIARIO"] == arr_idbeneficiario[1] ) 
 			{
 				arr_avisos[cont].idbeneficiario = KVD["ID BENEFICIARIO"]
-				arr_avisos[cont].ie = KVD["Nombre Institución"]
+				arr_avisos[cont].ie = KVD["Nombre Sede"]
 				arr_avisos[cont].departamento = KVD["Departamento"]
 				arr_avisos[cont].municipio = KVD["Municipio"]
-				arr_avisos[cont].centropoblado = KVD["Centro poblado"]	
+				arr_avisos[cont].centropoblado = KVD["Centro poblado"]		
 				cont++
 				textID2 = ""
 			}
@@ -76,7 +76,7 @@ function avisos(arr_avisos, cont) {
 	for( var i=0; i<cont; i++ ) 
 	{
 		doc.setFontSize(25)
-		doc.text("Fecha ______/______/ 2017", x, y-50)	// y-50
+		doc.text("Fecha ______/______/ 2018", x, y-50)	// y-50
 		doc.setFontSize(160)
 		doc.setFontType("bold")
 		doc.text(arr_avisos[i].idbeneficiario, x, y) // y=70
