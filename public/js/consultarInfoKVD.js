@@ -47,6 +47,7 @@ function consultarInfoKVD() {
                                 "<p> Sede:     " + KVD["Nombre Sede"] + "</p>" +
                                 "<p>DANE Sede:     " + KVD["DANE Sede"] + "</p>" +
         						"<p>Dirección:     "+ KVD["Dirección de la sede educativa"] + "</p>" +
+                                "<p>Nombre del rector:     "+ KVD["NOMBRE RECTOR"] + "</p>" +
 
         						"<h4>Líneas telefónicas</h4>" +
                                 "<div class='separador'></div>" + 
