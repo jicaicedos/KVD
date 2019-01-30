@@ -35,7 +35,7 @@ function load_footer() {
 
 	// Pie de página <footer>
 	$("footer").html(
-		"<p>Creado por: Javier Ignacio Caicedo</p>"+
-		"<p>Correo electrónico: javiercaicedos0324@gmail.com</p>"
+		"<p>Creado por: Javier Ignacio Caicedo</p>"
+		// "<p>Correo electrónico: javiercaicedos0324@gmail.com</p>"
 	)
 }
