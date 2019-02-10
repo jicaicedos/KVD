@@ -4,31 +4,23 @@ Municipio:
 Centro poblado: 
 Operador: 
 
-
 En visita de calidad ejecutada al Kiosco se encontró lo siguiente:
 
 
 
 Prueba de velocidad Download:  Kbps Upload:  Kbps
 
+No. Tickets
 
-Solicitud o Ticket generardo
-No. Ticket
+Tensión Neutro - Tierra:	
+Tensión Fase - Neutro:		
+Tensión Fase - Tierra:		
 
+Gestor:		Cel:
+Interventor:	Cel:
 
-Numero de computadores en KVD
+Numero de computadores en KVD: 
 
-¿Cuántos equipos hay en el KVD? 
-¿Cuántos funcionan correctamente? 
-
-
-¿Cuántos cursos?:  Ejemplo: 1 - Historia, mi historia, nuestra historia
-¿Ultima actividad sensibilización?:  Ejemplo: Yo aprendo
-Fecha actividad:   Ejemplo: 10 de abril 2018
-¿Qué proyectos tiene con la comunidad?:  
-
-¿El gestor esta participando del acompañamiento a algún proyecto productivo en conjunto con el Coordinador Departamental?
-SI NO    CUAL?________________________________________ 
 
 Seriales inventario
 MODEM				HUGHES HX200/SKYEDGE II	0
@@ -48,9 +40,3 @@ ESCRITORIO (Solo casos especiales)			0
 SILLAS (Solo casos especiales)				0
 CABINA TELEFÓNICA					0
 
-
-Datos gestor(a)
-Nombre: 
-Cédula: (Visita aprobación -> expedida en: )
-No. Celular: 
-Correo Electrónico (Visita de aprobación)
